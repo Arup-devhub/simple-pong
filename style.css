@@ -1,0 +1,46 @@
+:root{
+  --bg:#0e0f11;
+  --panel:#111214;
+  --accent:#ffd166;
+  --muted:#9aa3b2;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef6;background:linear-gradient(180deg,#071022 0%, #08121a 100%);}
+
+.container{max-width:1000px;margin:28px auto;padding:16px;text-align:center;}
+h1{margin:0 0 10px;font-weight:600;color:var(--accent)}
+
+.controls-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-bottom:8px;
+}
+
+#scoreboard{font-size:28px;color:#ffffff}
+
+.toggle{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.toggle input{transform:scale(1.0)}
+
+.canvas-wrap{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  display:block;
+}
+
+canvas{
+  width:100%;
+  display:block;
+  margin: 0 auto;
+  border-radius:8px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  cursor: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:2px solid rgba(255,255,255,0.06);
+}
+
+#help{margin-top:10px;color:var(--muted);font-size:13px}
